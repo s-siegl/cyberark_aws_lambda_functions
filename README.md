@@ -8,7 +8,7 @@ Requirements
 
 - Execute lambda function with AWS role that have access to instances information and credentials.
 - Having access to Vault REST API and Central Credential Provider
-- Declare an environment variable named 'PrivateKey' that contains private key string in pem format (example: PrivateKey: -----BEGIN RSA PRIVATE KEY-----\nMIIEogIBAAKCAQEAszEY23vmmzhu6fK3BC3LoDBRKoGx+mq4eb7TM46IOnzksdsM\nxuOW .....FOgWMEN3/1yRufKhD7l/yTEy83vtoo=\n-----END RSA PRIVATE KEY-----\n) replacing backspace with '\n'.
+- Declare an environment variable named 'PrivateKey' that contains private key string in pem format (example: PrivateKey: -----BEGIN RSA PRIVATE KEY-----\nMIIEogIBAAKCAQEAszEY23vmmzhu6fK3BC3LoDBRKoGx+mq4eb7TM46IOnzksdsM\nxuOW .....FOgWMEN3/1yRufKhD7l/yTEy83vtoo=\n-----END RSA PRIVATE KEY-----\n) replacing backspace with '\n'. This Key is used to authenticate to CyberArk Central Credential provider in order to retrieve Vault REST API Credentials. 
 - Update the global variables secion in the code according to your environment parameters (edit the .py files in the zip files or choose 'edit code inline' in AWS).
 - Add a 'Instance' file category to the windows and linux platforms that will contains the AWS VM instance ID.
 - Create two CloudWatch events: 
