@@ -15,6 +15,32 @@ Requirements
      ° One for machine 'pending' state and trigger the AWS provisionning lambda function with it
      ° One for machine 'terminated' state and trigger the AWS deprovisionning lambda function with it
 
+HowTo
+------------
+To test the deprovisionning function for example follow the steps: 
+- Create a new lambda function in AWS and upload the zip file DeprovCYBR
+- Ensure that the lambda function is executed with the appropriate role
+- Check the requirements above and update code consequently
+- Test using below test data example by updating the "instance-id" tag with an existing VM in AWS:
+```
+{
+  "version": "0",
+  "id": "b6d7c674-6576-4d38-9b6d-1d04e4755f80",
+  "detail-type": "EC2 Instance State-change Notification",
+  "source": "aws.ec2",
+  "account": "475713226446",
+  "time": "2017-03-01T10:14:18Z",
+  "region": "eu-central-1",
+  "resources": [
+    "arn:aws:ec2:eu-central-1:475713226446:instance/i-000986486613337bf"
+  ],
+  "detail": {
+    "instance-id": "i-088a3542c9b5ecd1a",
+    "state": "terminated"
+  }
+}
+```
+
 License
 -------
 
