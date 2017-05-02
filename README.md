@@ -1,6 +1,6 @@
 # AWS-Lambda-For-CyberArk
 Implementation of AWS Lambda functions in order to provision/deprovision Windows and Linux Admin account dinamycally in/from CyberArk.
-The provisionning function create safe and position a Vault user or group as owner according to machine AWS tags.
+The provisionning function create safe and position a Vault user or group as owner according to machine AWS tags. The account is onboarded with a 'default' key retrieved from the Vault.
 The deprovisonng function deletes all entries in CyberArk that contains the InstanceID of the terminated machine. 
 
 Requirements
