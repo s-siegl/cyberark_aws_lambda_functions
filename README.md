@@ -1,5 +1,6 @@
 
-DEPRECATED: use offcial CyberArk lambda instead here https://github.com/cyberark/cyberark-aws-auto-onboarding
+# DEPRECATED: 
+use offcial CyberArk lambda instead here https://github.com/cyberark/cyberark-aws-auto-onboarding
 
 # AWS-Lambda-For-CyberArk
 Implementation of AWS Lambda functions in order to provision/deprovision Windows and Linux Admin account dynamically in/from CyberArk.
