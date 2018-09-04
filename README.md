@@ -1,3 +1,6 @@
+
+DEPRECATED: use offcial CyberArk lambda instead here https://github.com/cyberark/cyberark-aws-auto-onboarding
+
 # AWS-Lambda-For-CyberArk
 Implementation of AWS Lambda functions in order to provision/deprovision Windows and Linux Admin account dynamically in/from CyberArk.
 The provisionning function creates a safe and position a Vault user or group as owner according to AWS machine configured tags. The account is onboarded with a 'default' key retrieved from the Vault. The 'default' key is used as SSH access key for linux machines and as password encryption key for windows machines. An immediate rotation is scheduled once the new account is onboarded. 
